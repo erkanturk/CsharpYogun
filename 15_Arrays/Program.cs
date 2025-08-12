@@ -40,7 +40,7 @@
             while (index < adlar.Length)
             {
                 Console.WriteLine(adlar[index]);
-                index--;
+                index++;
             }
 
         }
