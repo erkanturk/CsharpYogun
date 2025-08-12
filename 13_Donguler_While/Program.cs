@@ -111,40 +111,69 @@
 
             #region Kullanıcıya kayıtlı user name ve şifre giriş paneli için 3 hak giriş yapma sistemi
             //eğer kullanıcı 3 hakkıda yanlış girer ise 10 saniye sistemi kitleyip tekrardan süre dolunca kullanıcı girişi istesin
-            string userName = "admin";
-            string password = "a123";
-            int hak = 3;
-            while (hak>0)
+            //string userName = "admin";
+            //string password = "a123";
+            //int hak = 3;
+            //while (hak>0)
+            //{
+            //    Console.WriteLine("Kullanıcı Adınız");
+            //    string kad = Console.ReadLine().ToLower();
+            //    Console.WriteLine("Şifreniz");
+            //    string pass = Console.ReadLine().ToLower();
+            //    hak--;
+            //    if (kad==userName&& password==pass)
+            //    {
+            //        Console.WriteLine("Giriş Başarılı !!!!");
+            //        break;
+            //    }
+            //    else if (hak==0)
+            //    {
+            //        Console.WriteLine("Giriş hakkınız kalmadı...");
+            //        Console.WriteLine("Sistem kitlendi");
+            //        Thread.Sleep(10000);//Thread.Sleep Sisteme bir bekleme ekliyor delay gibi gecikme de diyebiliriz
+            //        //verdiğimiz mili saniye cinsinden değeri alır o süre boyunca sistemi bekletir altındaki kodları okumaz 
+            //        //süre dolana kadar.
+            //        Console.Clear();//Console tarafındaki tüm eski yazıları temizler temiz bir sayfa açar.
+            //        Console.WriteLine("Sistem açıldı");
+            //        hak=3;
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Giriş başarısız.");
+            //        Console.WriteLine("Tekrar deneyiniz");
+
+            //    }
+
+            //}
+            #endregion
+
+
+            #region Ödev Çözüm
+            int sayac = 0;
+            int toplam = 0;
+            while (true)
             {
-                Console.WriteLine("Kullanıcı Adınız");
-                string kad = Console.ReadLine().ToLower();
-                Console.WriteLine("Şifreniz");
-                string pass = Console.ReadLine().ToLower();
-                hak--;
-                if (kad==userName&& password==pass)
+                Console.WriteLine("Bir sayı giriniz");
+                int sayi = Convert.ToInt32(Console.ReadLine());
+                if (sayi==0&&sayac==0)
                 {
-                    Console.WriteLine("Giriş Başarılı !!!!");
+                    continue;
+                }
+                if (sayi==0)
+                {
                     break;
                 }
-                else if (hak==0)
+                if (sayi<0)
                 {
-                    Console.WriteLine("Giriş hakkınız kalmadı...");
-                    Console.WriteLine("Sistem kitlendi");
-                    Thread.Sleep(10000);//Thread.Sleep Sisteme bir bekleme ekliyor delay gibi gecikme de diyebiliriz
-                    //verdiğimiz mili saniye cinsinden değeri alır o süre boyunca sistemi bekletir altındaki kodları okumaz 
-                    //süre dolana kadar.
-                    Console.Clear();//Console tarafındaki tüm eski yazıları temizler temiz bir sayfa açar.
-                    Console.WriteLine("Sistem açıldı");
-                    hak=3;
+                    Console.WriteLine("Lütfen Pozitif değer giriniz");
+                    continue;
                 }
-                else
-                {
-                    Console.WriteLine("Giriş başarısız.");
-                    Console.WriteLine("Tekrar deneyiniz");
-
-                }
-
+                toplam+=sayi;
+                sayac++;
             }
+            Console.WriteLine("Toplam: "+toplam);
+            Console.WriteLine("Ortalama: "+(toplam/sayac));
+
             #endregion
 
         }
