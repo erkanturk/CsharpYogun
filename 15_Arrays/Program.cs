@@ -223,68 +223,125 @@
             //    Console.WriteLine(sayi);
             //}
 
-            Console.WriteLine("1.Sayıyı giriniz");
-            double sayi1 = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("2.Sayıyı giriniz");
-            double sayi2 = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Yapmak istediğiniz işlemi belirtin \n01'topla'\n02'cikar'\n03'carp'\n04'bol'");
-            string islem = Console.ReadLine().ToLower();
-            int i;
-            if (int.TryParse(islem, out i))
-            {
-                if (i==01)
-                {
-                    Console.WriteLine(sayi1+sayi2);
-                }
-                else if (i==02)
-                {
-                    Console.WriteLine(sayi1-sayi2);
-                }
-                else if (i==03)
-                {
-                    Console.WriteLine(sayi1*sayi2);
-                }
-                else if (i==04)
-                {
-                    if (sayi2!=0)
-                    {
-                        Console.WriteLine(sayi1/sayi2);
-                    }
-                    else
-                    {
-                        Console.WriteLine("Sayı 0 a bölünemez");
-                    }
-                }
-            }
-            else
-            {
-                if (islem=="topla")
-                {
-                    Console.WriteLine(sayi1+sayi2);
-                }
-                else if (islem=="cikar")
-                {
-                    Console.WriteLine(sayi1-sayi2);
-                }
-                else if (islem=="carp")
-                {
-                    Console.WriteLine(sayi1*sayi2);
-                }
-                else if (islem=="bol")
-                {
-                    if (sayi2!=0)
-                    {
-                        Console.WriteLine(sayi1/sayi2);
-                    }
-                    else
-                    {
-                        Console.WriteLine("Sayı 0 a bölünemez");
-                    }
-                }
-            }
+            //Console.WriteLine("1.Sayıyı giriniz");
+            //double sayi1 = Convert.ToDouble(Console.ReadLine());
+            //Console.WriteLine("2.Sayıyı giriniz");
+            //double sayi2 = Convert.ToDouble(Console.ReadLine());
+            //Console.WriteLine("Yapmak istediğiniz işlemi belirtin \n01'topla'\n02'cikar'\n03'carp'\n04'bol'");
+            //string islem = Console.ReadLine().ToLower();
+            //int i;
+            //if (int.TryParse(islem, out i))
+            //{
+            //    if (i==01)
+            //    {
+            //        Console.WriteLine(sayi1+sayi2);
+            //    }
+            //    else if (i==02)
+            //    {
+            //        Console.WriteLine(sayi1-sayi2);
+            //    }
+            //    else if (i==03)
+            //    {
+            //        Console.WriteLine(sayi1*sayi2);
+            //    }
+            //    else if (i==04)
+            //    {
+            //        if (sayi2!=0)
+            //        {
+            //            Console.WriteLine(sayi1/sayi2);
+            //        }
+            //        else
+            //        {
+            //            Console.WriteLine("Sayı 0 a bölünemez");
+            //        }
+            //    }
+            //}
+            //else
+            //{
+            //    if (islem=="topla")
+            //    {
+            //        Console.WriteLine(sayi1+sayi2);
+            //    }
+            //    else if (islem=="cikar")
+            //    {
+            //        Console.WriteLine(sayi1-sayi2);
+            //    }
+            //    else if (islem=="carp")
+            //    {
+            //        Console.WriteLine(sayi1*sayi2);
+            //    }
+            //    else if (islem=="bol")
+            //    {
+            //        if (sayi2!=0)
+            //        {
+            //            Console.WriteLine(sayi1/sayi2);
+            //        }
+            //        else
+            //        {
+            //            Console.WriteLine("Sayı 0 a bölünemez");
+            //        }
+            //    }
+            //}
 
 
             #endregion
+            #region Örnek 3
+            //kullanıcının girdiği kelimeyi karakterlere ayırıp gösteren bir dizi yapısı yapalım.
+            //Console.WriteLine("Kelime giriniz");
+            //string kelime = Console.ReadLine();
+            //char[] kelimeDizi = new char[kelime.Length];
+            //int i = 0;
+            //foreach (char harf in kelime)
+            //{
+            //    kelimeDizi[i]=kelime[i];
+            //    Console.WriteLine(harf);
+            //    i++;
+            //}
+            #endregion
+
+
+            #region bir dizinin içinde kullanıcıdan en az 10 eleman girmesini isteyelim 
+            //kullanıcı bu diziyi doldursun dolan dizideki her bir elemanın çift sayı ve tek sayılarını toplayıp
+            //tek toplam çift toplam olarak ekrana yazdıralım.
+            //int diziSayi = 0;
+            //int tekToplam = 0;
+            //int ciftToplam = 0;
+            //while (true)
+            //{
+            //    Console.WriteLine("Minimum 10 elemanlı bir dizi oluşturun");
+            //    diziSayi=Convert.ToInt32(Console.ReadLine());
+            //    if (diziSayi<10)
+            //    {
+            //        continue;
+            //    }
+            //    else if (diziSayi>=10)
+            //    {
+            //        break;
+            //    }
+            //}
+            //int[] dizi = new int[diziSayi];
+            //for (int i = 0; i < dizi.Length; i++)
+            //{
+            //    Console.WriteLine($"Dizinin {i+1}.Elemanı");
+            //    int sayi = Convert.ToInt32(Console.ReadLine());
+            //    dizi[i] = sayi;
+            //}
+            //foreach (int s in dizi)
+            //{
+            //    if (s%2==0)
+            //    {
+            //        ciftToplam+=s;
+            //    }
+            //    else
+            //    {
+            //        tekToplam+=s;
+            //    }
+            //}
+            //Console.WriteLine("Çift Toplamlar: "+ciftToplam);
+            //Console.WriteLine("Tek Toplamlar: "+tekToplam);
+            #endregion
+
+           
 
             //Kaynaklar
             //https://roadmap.sh/
