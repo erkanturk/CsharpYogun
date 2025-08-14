@@ -11,6 +11,18 @@
             //Aynı sayılar tekrar atanmayacak
             //Dizideki en büyük ve en küçük sayılar sort() kullanılmadan bulup ekrana yazdırılacak 
             #endregion
+            #region Ödev method
+            /*
+            kullanıcıdan iki adet ürün fiyatı alınacak pahalı olan ürüne %30 indirim uygulanacak 
+            kullanıcıya 3. ürünü almak ister misiniz diye soracağız eğer evet derse başka bir methoda yönlendirip 
+            3. ürün fiyatı isteyeceğiz 3. ürüne de %50 indirim uygulayıp toplam 1.ürün 2.ürün(%30) 3.ürünün(%50) 
+            fiyatlarını toplayıp 
+            Ekrana toplam fiyatı yazdıracağız 
+            Eğer istemez ise 3. ürünü 2 üründen pahalı olan fiyata indirim uygulayıp toplamı ekranda göstereceğiz.
+            
+            
+            */
+            #endregion
             /* 
 
          Müşteri Daha önceden tanımlanmış bir ürün listesinden bir ürün seçecek. 
@@ -287,10 +299,13 @@
                 fiyat[i]=uFiyat*1.18;
 
             }
+            double toplam = 0;
             for (int i = 0; i<urunAdi.Length; i++)
             {
+                toplam+=fiyat[i];
                 Console.WriteLine($"Alınan: {urunAdi[i]}. Ürün ve Kdvli Fiyatı: {fiyat[i]}");
             }
+            Console.WriteLine("Toplam ödenecek fiyat: "+toplam);
             #endregion
         }
     }
