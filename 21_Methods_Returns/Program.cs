@@ -20,18 +20,18 @@
 
             //Kullanıcıdan fiyat alalım ve kdv oranını soralım 
             //girdiği fiyata kdv uygulayan methodu yazalım ve ekranda yazdıralım
-            //Console.WriteLine("Ürün fiyatı:");
-            //double urunFiyat = Convert.ToDouble(Console.ReadLine());
-            //Console.WriteLine("Kdv oranı:");
-            //double kdv = Convert.ToDouble(Console.ReadLine());
-            // Kdv(urunFiyat, kdv);
+            Console.WriteLine("Ürün fiyatı:");
+            double urunFiyat = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Kdv oranı:");
+            double kdv = Convert.ToDouble(Console.ReadLine());
+            Kdv(urunFiyat, kdv);
 
-            //KdvUygula();
+            KdvUygula();
             //Console.WriteLine(KdvLi());
             double fiyat = KdvLi2();
             Console.WriteLine("Kdv oranı:");
-            double kdv = Convert.ToDouble(Console.ReadLine());
-            fiyat*=kdv;
+            double kdv2 = Convert.ToDouble(Console.ReadLine());
+            fiyat*=kdv2;
             Console.WriteLine(fiyat);
         }
         static void Kdv(double sayi, double sayi2)//Parametreli iş yapan dışarıdan gelen değerleri içinde işleme tabi tutar
