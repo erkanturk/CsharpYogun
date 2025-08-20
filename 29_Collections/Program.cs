@@ -83,6 +83,160 @@ namespace _29_Collections
             //    Console.WriteLine(item);
             //}
             #endregion
+            #region SortedList
+            /*Sıralı Liste
+             * Sözlük tabanlı bir koleksiyon yapısıdır. İçerisinde Key-Value ilişkisi ile değerleri tutar.
+             * Tüm sözlük Tabanlı koleksiyon yapıları IDictonary interface'inden miras almıştır.
+             *SortedList e eleman olarak verilen key'ler unique(Benzersiz) olmalıdır.
+             *Generic type ile 2 type alır ilki key ikincisi value dur
+             *SortedList yapısında Keyler sabittir eğer string olarak verdiysek string devam etmeliyiz.
+             *Fakat valuelar istediğimiz tipte olabilir
+            
+            */
+            //SortedList iller = new SortedList();
+            //iller.Add(01, "Adana");
+            //iller.Add(34, "Istanbul");
+            //iller.Add(21, "Diyarbakır");
+            //iller.Add(35, "Izmir");
+            //iller.Add(37, "Kastamonu");
+            //iller.Add(42, "Konya");
+            //iller.Add(57, "Sinop");
+            //iller.Add(58, "Sivas");
+            //iller.Add(32, "Isparta");
+            //iller.Add(17, "Canakkale");
+            //iller.Add(53, "Rize");
+            //iller.Add(61, "Trabzon");
+            //iller.Add(81, "Düzce");
+            //iller.Add(07, "Antalya");
+            //iller.Add(06, "Ankara");
+            //iller.Add(16, "Bursa");
+            //iller.Add(60, "Tokat");
+            //iller.Add(31, "Hatay");
+            //iller.Add(05, 05);//Valueları istediğimiz tipte verebiliriz.
+            //iller.Add("19", "Kırklareli");//System.InvalidOperationException: 'Failed to compare two elements in the array.'
+
+            //foreach (var item in iller)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            //Console.WriteLine("*******************");
+            //foreach (DictionaryEntry item in iller)
+            //{
+            //    Console.WriteLine(item.Value+" "+item.Key);
+            //}
+            //Console.WriteLine(iller.ContainsValue("Adana"));
+            //iller[28]="Giresun";//olmayan değeri ekler.
+            //foreach (DictionaryEntry item in iller)
+            //{
+            //    Console.WriteLine(item.Value);
+            //}
+            //iller[01]="Adana Merkez";//Var olan değeri günceller 
+            //foreach (DictionaryEntry item in iller)
+            //{
+            //    Console.WriteLine(item.Value);
+            //}
+            //foreach (var item in iller.Keys)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            //foreach (var item in iller.Values)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            //foreach (DictionaryEntry item in iller)
+            //{
+            //    Console.WriteLine(item.Value+" "+item.Key);
+            //}
+            //foreach (var item in iller)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            // SortedList<int, string> genericSiraliListe = new SortedList<int, string>();
+            // genericSiraliListe.Add(1, "Eren");
+            // genericSiraliListe.Add(2, "Tuğba");
+            // genericSiraliListe.Add(3, "Zelal");
+            // genericSiraliListe.Add(4, "Büşra");
+            //// genericSiraliListe.Add(4, 5);Hata veriri çünkü generic bir yapıda belirtilen veri tipinde değerler olmalıdır.
+            // foreach (var item in genericSiraliListe)
+            // {
+            //     Console.WriteLine(item.Value);
+            // }
+            //SortedList liste = new SortedList()
+            //{
+            //    {"mavi","blue" },
+            //    { "bulutlu","cloudy"}
+            //};
+            //foreach (DictionaryEntry item in liste)
+            //{
+            //    Console.WriteLine(item.Value);
+            //}
+            //foreach (DictionaryEntry item in liste)
+            //{
+            //    Console.WriteLine(item.Key);
+            //}
+
+            #endregion
+
+            #region Ödev SortedList Tr-En Sözlük
+            /*
+          sözlük uygulaması istenmektedir.Tr - Eng
+       sözlük = { "siyah":"black",,,,}
+          kullanıcı 4 girene kadar sorulur.
+           1 - Arama
+           2 - Çıkarma
+           3 - Listeleme
+           4 - Çıkış
+
+      Kullanıcı 1'e basarsa ->
+          - Aranacak olan kelimeyi giriniz:
+          -Bu kelime dizide varsa eng karşılığı yazılır.
+          -Yoksa uygulamanın gelişmesine yardımcı olmak ister msiniz(E-H):
+              -E ise bu kelimenin karşılığı istenir ve sözlüğe eklenir
+              -H ise bişey yapılmaz
+      Kullanıcı 2'ye basarsa ->
+          - Çıkarılmak istenen kelime :
+          -Kelime sözlükte varsa çıkartılır
+          - Yoksa uyarı verilir.
+      Kullanıcı 3'e basarsa ->
+          - Tum key value lar listelenir
+          -KEY->VALUE
+      Kullanıcı 4'e basarsa ->
+          - Döngü sonlanır.
+           */
+            #endregion
+            #region HashTable Düzensiz Liste
+            /* HashTable:Key Sıralamasının olmadığı ve hızlı key erişimi gerektiğinde ideal olarak kullanılan bir yapıdır
+             * HashTable'ın görevi Çok sayıda elemanı key değerlerni kullanarak getirmesidir.
+             * Bir key sadece bir kez kullanılır SortedListeki gibi key değerlerinin aynı tipte olması zorunlu değildir.
+
+            
+            */
+            //Hashtable x = new Hashtable();
+            //x.Add(06, "Ankara");
+            //x.Add("05", "Amasya");
+            //x.Add("Sayi", 10);
+            //x.Add(true, false);
+            //x.Add(07, "Antalya");
+            //x.Add("34", "İstanbul");
+            ////foreach (DictionaryEntry item in x)
+            ////{
+            ////    Console.WriteLine(item.Value+" "+item.Key);
+            ////}
+            ////x.Remove(true);//Key üzerinden table dan silme işlemi yapar.
+            ////foreach (DictionaryEntry item in x)
+            ////{
+            ////    Console.WriteLine(item.Value+" "+item.Key);
+            ////}
+            ////Console.WriteLine(x.Count);
+            ////Console.WriteLine(x.ContainsValue("antalya"));
+
+            //x["34"]="Kadıköy";
+            //x[34]="İstanbul";
+            //foreach (DictionaryEntry item in x)
+            //{
+            //    Console.WriteLine(item.Value+" "+item.Key);
+            //}
+            #endregion
         }
     }
 }
