@@ -68,8 +68,8 @@
             List<Buzdolabi> buzdolabis = new List<Buzdolabi>()
             {
                 new Buzdolabi(){Id=1,Marka="Arçelik",Model="B150",Fiyat=14000,Enerji="E",Renk="Gri"},
-                new Buzdolabi(){Id=1,Marka="Bosh",Model="C150",Fiyat=24000,Enerji="B",Renk="Beyaz"},
-                new Buzdolabi(){Id=1,Marka="Profilo",Model="A150",Fiyat=34000,Enerji="A",Renk="Gri"}
+                new Buzdolabi(){Id=2,Marka="Bosh",Model="C150",Fiyat=24000,Enerji="B",Renk="Beyaz"},
+                new Buzdolabi(){Id=3,Marka="Profilo",Model="A150",Fiyat=34000,Enerji="A",Renk="Gri"}
             };
             foreach (var item in buzdolabis)
             {

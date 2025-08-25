@@ -28,13 +28,13 @@
             //    Console.WriteLine(item.Marka+" "+item.Model+" "+item.Enerji+" "+item.Fiyat);
             //}
 
+            SeedClass.Ekle();
            
-
             BuzDolabi b = new BuzDolabi();
             //b.Kaydet();
             //buzDolabis.Add(b);
             b.Kaydet(buzDolabis);
-
+            
             foreach (var item in buzDolabis)
             {
                 Console.WriteLine(item.Marka+" "+item.Model+" "+item.Enerji+" "+item.Fiyat);
