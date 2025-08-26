@@ -41,40 +41,42 @@ namespace _37_Etut
             #endregion
             #region Örnek 2 Optional ve Params
             Ogrenci ogrenci = new Ogrenci();
-            Console.WriteLine("Öğrenci Adı");
-            string ad = Console.ReadLine();
-            Console.WriteLine("Öğrenci Soyadı");
-            string soyad = Console.ReadLine();
-            Console.WriteLine("Öğrenci Bölümü");
-            string bolum = Console.ReadLine();
-            ogrenci.Kaydet(ad, soyad, bolum);
-            Console.WriteLine("Öğrenci Adı");
-            string ad2 = Console.ReadLine();
-            Console.WriteLine("Öğrenci Soyadı");
-            string soyad2 = Console.ReadLine();
-            Console.WriteLine("Öğrenci Bölümü");
-            string bolum2 = Console.ReadLine();
-            ogrenci.Kaydet(ad2, soyad2, bolum2);
-            Console.WriteLine("Öğrenci Adı");
-            string ad3 = Console.ReadLine();
-            Console.WriteLine("Öğrenci Soyadı");
-            string soyad3 = Console.ReadLine();
-            Console.WriteLine("Öğrenci Bölümü");
-            string bolum3 = Console.ReadLine();
-            ogrenci.Kaydet(ad3, soyad3, bolum3);
+            //Console.WriteLine("Öğrenci Adı");
+            //string ad = Console.ReadLine();
+            //Console.WriteLine("Öğrenci Soyadı");
+            //string soyad = Console.ReadLine();
+            //Console.WriteLine("Öğrenci Bölümü");
+            //string bolum = Console.ReadLine();
+            //ogrenci.Kaydet(ad, soyad, bolum);
+            //Console.WriteLine("Öğrenci Adı");
+            //string ad2 = Console.ReadLine();
+            //Console.WriteLine("Öğrenci Soyadı");
+            //string soyad2 = Console.ReadLine();
+            //Console.WriteLine("Öğrenci Bölümü");
+            //string bolum2 = Console.ReadLine();
+            //ogrenci.Kaydet(ad2, soyad2, bolum2);
+            //Console.WriteLine("Öğrenci Adı");
+            //string ad3 = Console.ReadLine();
+            //Console.WriteLine("Öğrenci Soyadı");
+            //string soyad3 = Console.ReadLine();
+            //Console.WriteLine("Öğrenci Bölümü");
+            //string bolum3 = Console.ReadLine();
+            //ogrenci.Kaydet(ad3, soyad3, bolum3);
 
-            List<Ogrenci> ogrencis = new List<Ogrenci>()
-            {
-                new Ogrenci(){Ad=ad,Soyad=soyad,Bolum=bolum},
-                new Ogrenci(){Ad=ad2,Soyad=soyad2,Bolum=bolum2},
-                new Ogrenci(){Ad=ad3,Soyad=soyad3,Bolum=bolum3},
-            };
-           
+            //List<Ogrenci> ogrencis = new List<Ogrenci>()
+            //{
+            //    new Ogrenci(){Ad=ad,Soyad=soyad,Bolum=bolum},
+            //    new Ogrenci(){Ad=ad2,Soyad=soyad2,Bolum=bolum2},
+            //    new Ogrenci(){Ad=ad3,Soyad=soyad3,Bolum=bolum3},
+            //};
 
-            ogrenci.Yazdir(ogrencis);
 
-            var sayi = 10;
-            var sayi2= "10";
+            //ogrenci.Yazdir(ogrencis);
+
+            //var sayi = 10;
+            //var sayi2= "10";
+            //ogrenci.OgrenciListele("Ahmet","Yılmaz","Yazılım","Ali","Demir","Makina","Mehmet","Kaya","Elektrik","Veli","Yılmaz","Elektronik");
+            ogrenci.Kaydet2(2,0 );
             #endregion
             #endregion
         }
