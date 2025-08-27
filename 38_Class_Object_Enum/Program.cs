@@ -24,7 +24,7 @@
              * ilk verilen değeri diğer elemanlar takip eder.
             
             */
-
+            #region Örnek 1 
             //Araba araba = new Araba();
             //araba.Marka=Markalar.Toyota;
             //araba.Model="Supra";
@@ -32,9 +32,9 @@
             //araba.Vites=Vitesler.Manuel;
 
             //araba.Bilgi();
-            Console.WriteLine(Markalar.BMW);//Marka ismini yazdırır
-            Markalar s2 = Markalar.Honda;
-            Console.WriteLine((int)s2);//Marka numarasını yazdırır
+            //Console.WriteLine(Markalar.BMW);//Marka ismini yazdırır
+            //Markalar s2 = Markalar.Honda;
+            //Console.WriteLine((int)s2);//Marka numarasını yazdırır
 
             //string[] markalar = Enum.GetNames(typeof(Markalar));
             ////int[] markalar2 = Enum.GetValues(typeof(Markalar));
@@ -62,16 +62,39 @@
             //        i=0;
             //        continue;
             //    }
-            //}
-            Console.WriteLine("BackgroundColor giriniz");
-            string backColor = Console.ReadLine();
-            Console.WriteLine("ForegroundColor giriniz");
-            string foreColor = Console.ReadLine();
-            //Console tarafında gönderdiğimiz değer enum yapısında bize renk olarak döner
-            Console.BackgroundColor = (ConsoleColor)Enum.Parse(typeof(ConsoleColor), backColor);
-            Console.ForegroundColor = (ConsoleColor)Enum.Parse(typeof(ConsoleColor), foreColor);
-            Console.WriteLine("Renk ayarlandır");
+            ////}
+            //Console.WriteLine("BackgroundColor giriniz");
+            //string backColor = Console.ReadLine();
+            //Console.WriteLine("ForegroundColor giriniz");
+            //string foreColor = Console.ReadLine();
+            ////Console tarafında gönderdiğimiz değer enum yapısında bize renk olarak döner
+            //Console.BackgroundColor = (ConsoleColor)Enum.Parse(typeof(ConsoleColor), backColor);
+            //Console.ForegroundColor = (ConsoleColor)Enum.Parse(typeof(ConsoleColor), foreColor);
+            //Console.WriteLine("Renk ayarlandır");
+            #endregion
 
+            Console.WriteLine("Kategori seçiniz");
+            string kategori = Console.ReadLine();
+            KitapKategori kitapKategori = (KitapKategori)Enum.Parse(typeof(KitapKategori), kategori);
+            switch (kitapKategori)
+            {
+                case KitapKategori.BilimKurgu:
+                    Console.WriteLine("Bilim Kurgu kategorisindeki kitaplar A reyonundadır.");
+                    break;
+                case KitapKategori.DunyaKlasikleri:
+                    Console.WriteLine("Dünya Klasikleri kategorisindeki kitaplar B reyonundadır.");
+                    break;
+                case KitapKategori.Psikoloji:
+                    Console.WriteLine("Psikoloji kategorisindeki kitaplar C reyonundadır.");
+                    break;
+                case KitapKategori.Aksiyon:
+                    Console.WriteLine("Aksiyon kategorisindeki kitaplar D reyonundadır.");
+                    break;
+                case KitapKategori.Macera:
+                    Console.WriteLine("Macera kategorisindeki kitaplar E reyonundadır.");
+                    break;
+                default: Console.WriteLine("Hatalı seçim"); break;
+            }
         }
     }
     enum Markalar { Ford =4, Toyota, Honda, BMW, Audi }
