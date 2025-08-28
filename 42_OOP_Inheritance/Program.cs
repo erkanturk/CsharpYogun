@@ -1,4 +1,6 @@
-﻿namespace _42_OOP_Inheritance
+﻿using System.Security.Principal;
+
+namespace _42_OOP_Inheritance
 {
     internal class Program
     {
@@ -10,6 +12,8 @@
 
              
             */
+            //Personel personel = new Personel();
+
             Ik ik = new Ik();
             ik.Ad="Erkan";
             ik.Soyad="Türk";

@@ -37,11 +37,16 @@
             //Console.WriteLine((int)s2);//Marka numarasını yazdırır
 
             //string[] markalar = Enum.GetNames(typeof(Markalar));
-            ////int[] markalar2 = Enum.GetValues(typeof(Markalar));
             //int[] markalar2 = (int[])Enum.GetValues(typeof(Markalar));
+            ////int[] markalar2 = (int[])Enum.GetValues(typeof(Markalar));
             //foreach (var item in markalar2)
             //{
             //    Console.WriteLine(item);
+
+            //}
+            //foreach (var i in markalar)
+            //{
+            //    Console.WriteLine(i);
             //}
             //bool sonuc = Enum.IsDefined(typeof(Markalar), 3);
             //bool sonuc2 = Enum.IsDefined(typeof(Markalar), "Bmw");

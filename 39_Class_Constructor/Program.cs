@@ -32,6 +32,9 @@
 
             //ogrenci1= new Ogrenci("Erkan",1);
             //ogrenci1.Bilgi();
+            Kisi kisi = new Kisi();
+
+            kisi.Yazdir();
         }
     }
 }

@@ -13,17 +13,17 @@ namespace _39_Class_Constructor
         public int Yas;
 
         //Solid Prensipleri Dependency Inversion Principle
-        public Kisi()
-        {
+        //public Kisi()
+        //{
             
-        }
-        public Kisi(string ad, string soyad,int yas)
-        {
-            Ad= ad;
-            Yas= yas;
-            Soyad=soyad;
-            Console.WriteLine($"Ctor Ad:{Ad} Soyad:{Soyad} Yaş:{Yas}");
-        }
+        //}
+        //public Kisi(string ad, string soyad,int yas)
+        //{
+        //    Ad= ad;
+        //    Yas= yas;
+        //    Soyad=soyad;
+        //    Console.WriteLine($"Ctor Ad:{Ad} Soyad:{Soyad} Yaş:{Yas}");
+        //}
         public void Yazdir()
         {
             Console.WriteLine($"Ad:{Ad} Soyad:{Soyad} Yaş:{Yas}");

@@ -63,10 +63,10 @@
     class Islem
     {
         public double sayi;
-        private double sayi2;
+        private double sayi2 ;
 
-        public double _Sayi2 
-        { 
+        public double _Sayi2
+        {
             get { return sayi2; }
 
             set
