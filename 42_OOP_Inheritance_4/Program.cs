@@ -11,6 +11,8 @@
                new InsanKaynaklari(){Id=3,Ad="Tahsin",Soyad="Canpolat",TcNo="4444",PersonelSayisi=5 },
                new InsanKaynaklari(){Id=4,Ad="Onur",Soyad="Yağız",TcNo="555",PersonelSayisi=5 }
            };
+            InsanKaynaklari isk = new InsanKaynaklari();
+            isk.Kaydet();
 
             while (true)
             {
