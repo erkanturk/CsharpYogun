@@ -18,8 +18,8 @@
     }
     abstract class Elektronik//Base class
     {
-        public  double AlisFiyati { get; set; }
-        public  double KarYuzdesi { get; set; }
+        public double AlisFiyati { get; set; }
+        public double KarYuzdesi { get; set; }
 
         //public abstract double FiyatHesapla()//Soyut bir işlem yaptığım için hata verir
         //{
@@ -28,8 +28,19 @@
         public abstract double FiyatHesapla();
 
     }
-    class Telefon : Elektronik
+    abstract class SarjLi : Elektronik
     {
+        public abstract int MiliAmper { get; set; }
+    }
+    abstract class Elektirikli : Elektronik
+    {
+        public abstract int Volt { get; set; }
+    }
+
+    class Telefon : SarjLi
+    {
+        public override int MiliAmper { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
         public override double FiyatHesapla()
         {
             return AlisFiyati + (AlisFiyati*KarYuzdesi);
@@ -47,10 +58,31 @@
     }
     class Tablet : Elektronik
     {
-        public double Kilif {  get; set; }
+        public double Kilif { get; set; }
         public override double FiyatHesapla()
         {
             return Kilif+ AlisFiyati + (AlisFiyati*KarYuzdesi);
         }
     }
+    class Buzdolabi : Elektirikli
+    {
+        public override int Volt { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
+        public override double FiyatHesapla()
+        {
+            throw new NotImplementedException();
+        }
+    }
+    //class Laptop : SarjLi, Elektirikli//Diamond Problem
+    //{
+    //    public override int MiliAmper { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
+    //    public override double FiyatHesapla()
+    //    {
+    //        throw new NotImplementedException();
+    //    }
+    //}
+
+
+
 }
